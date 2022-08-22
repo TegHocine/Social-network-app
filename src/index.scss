@@ -1,5 +1,27 @@
 @use './scss/' as *;
 
-body {
-  background: $orange;
+.app {
+  overflow: hidden;
+  color: $black;
+  background-color: $white;
+  font-family: $ff;
+  font-display: swap;
+  padding: 1rem;
+
+  .blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: $blur;
+    filter: blur(72px);
+    &.blur-top {
+      top: -18%;
+      right: 0;
+    }
+    &.blur-mid {
+      top: 36%;
+      left: -8rem;
+    }
+  }
 }

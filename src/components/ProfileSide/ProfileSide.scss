@@ -1,0 +1,7 @@
+@use '../../scss/' as *;
+
+.profileSide {
+  @include flex(center, unset);
+  flex-direction: column;
+  gap: 1rem;
+}

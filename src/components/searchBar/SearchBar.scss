@@ -1,0 +1,35 @@
+@use '../../scss/' as *;
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  .logo {
+    cursor: pointer;
+  }
+  .search-input {
+    background-color: $inputColor;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    & > input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      height: 100%;
+      width: 100%;
+    }
+    .search-icon {
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      background: $buttonBg;
+      padding: 4px;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+}
