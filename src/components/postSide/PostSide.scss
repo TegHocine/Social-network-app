@@ -1,0 +1,9 @@
+@use '../../scss/' as *;
+
+.postSide {
+  @include flex(center, unset);
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  padding-inline: 1rem;
+}

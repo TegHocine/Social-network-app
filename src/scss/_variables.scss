@@ -1,13 +1,20 @@
-$yellow: #f5c32c;
-$orange: #fca61f;
-$black: #242d49;
-$white: #ffffff;
-$gray: rgba(36, 45, 73, 0.65);
-$profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+$accent: #fca61f;
+$darker-accent: #f95f35;
+
+$darker-text: #242d49;
+$lighter-text: #ffffff;
+
+$buttonBg: linear-gradient(98.63deg, $accent 0%, $darker-accent 100%);
+$bg-color: #ffffff;
+$inputColor: #28343e12;
+$cardColor: #ffffffa3;
 $hrColor: #cfcdcd;
-$cardColor: rgba(255, 255, 255, 0.64);
-$buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
-$inputColor: rgba(40, 52, 62, 0.07);
+
+$profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+
+$yellow: #f5c32c;
+$gray: #242d49a6;
+
 $photo: #4cb256;
 $video: #4a4eb7;
 $location: #ef5757;

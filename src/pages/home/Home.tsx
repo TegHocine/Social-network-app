@@ -1,13 +1,12 @@
+import PostSide from '../../components/postSide/PostSide'
 import ProfileSide from '../../components/ProfileSide/ProfileSide'
 import './Home.scss'
 
 const Home = () => {
   return (
     <div className='home'>
-      <div className='profile-side'>
-        <ProfileSide />
-      </div>
-      <div className='post-side'>post</div>
+      <ProfileSide />
+      <PostSide />
       <div className='right-side'>right</div>
     </div>
   )

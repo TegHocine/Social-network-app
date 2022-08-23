@@ -1,0 +1,41 @@
+@use '../../scss/' as *;
+
+.followersItem {
+  @include flex(center, space-between);
+  width: 100%;
+
+  .follower {
+    @include flex(center, unset);
+    gap: 0.3rem;
+
+    .follower-name {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.875rem;
+      & > span:nth-child(1) {
+        font-weight: bold;
+      }
+      & > span:nth-child(2) {
+        color: $gray;
+      }
+    }
+  }
+  .follower-button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: $lighter-text;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    background: $buttonBg;
+    font-weight: 500;
+    @include fontSize(0.875rem);
+    transition: all 100ms ease;
+  }
+  .follower-button:hover {
+    color: $accent;
+    background: transparent;
+    border: 2px solid $accent;
+  }
+}

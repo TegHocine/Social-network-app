@@ -1,0 +1,31 @@
+@use '../../scss/' as *;
+
+.button {
+  all: unset;
+  cursor: pointer;
+
+  &.alter-button {
+    @include flex(center, center);
+    @include fontSize(1.3rem);
+    & > span {
+      @include fontSize(0.75rem);
+    }
+  }
+
+  &.default-button {
+    color: $lighter-text;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    background: $buttonBg;
+    font-weight: 500;
+    @include fontSize(0.875rem);
+
+    transition: all 100ms ease;
+    &:hover {
+      color: $accent;
+      background: transparent;
+      outline: 2px solid $accent;
+    }
+  }
+}
