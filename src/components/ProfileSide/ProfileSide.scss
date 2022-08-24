@@ -3,5 +3,6 @@
 .profileSide {
   @include flex(center, unset);
   flex-direction: column;
+  flex: 0.4;
   gap: 1rem;
 }

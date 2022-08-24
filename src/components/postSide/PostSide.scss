@@ -4,6 +4,8 @@
   @include flex(center, unset);
   flex-direction: column;
   height: 100vh;
-  overflow: auto;
-  padding-inline: 1rem;
+
+  margin-inline: auto;
+  gap: 1rem;
+  flex: 1;
 }

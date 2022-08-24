@@ -2,7 +2,10 @@
 
 .home {
   position: relative;
-  display: grid;
-  grid-template-columns: 18rem auto 20rem;
-  gap: 1rem;
+  display: flex;
+  gap: 1.5rem;
+
+  .right-side {
+    flex: 0.4;
+  }
 }
