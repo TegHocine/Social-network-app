@@ -1,0 +1,55 @@
+@use '../../scss/' as *;
+
+.postItem {
+  margin-bottom: 2rem;
+  width: 90%;
+  display: flex;
+  margin-inline: auto;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: $cardColor;
+  border-radius: 1rem;
+  gap: 1rem;
+  filter: $shadow-md;
+  & > img {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    filter: $shadow-md;
+  }
+  .postReact {
+    display: flex;
+    align-items: flex-start;
+    @include fontSize(1.5rem);
+    gap: 1.5rem;
+    color: $darker-text;
+    & > * {
+      @include flex(center, center);
+      border-radius: 9999px;
+      padding: 0.3rem;
+      transition: all 200ms ease;
+    }
+    &__likes {
+      &:hover {
+        color: $likes;
+        box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+        background-color: rgb($likes, 0.2);
+      }
+    }
+    &__reply {
+      &:hover {
+        color: $reply;
+        box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+        background-color: rgb($reply, 0.2);
+      }
+    }
+    &__share {
+      &:hover {
+        color: $share;
+        box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+        background-color: rgb($share, 0.2);
+      }
+    }
+  }
+}

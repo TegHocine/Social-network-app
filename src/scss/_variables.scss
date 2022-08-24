@@ -4,7 +4,10 @@ $darker-accent: #f95f35;
 $darker-text: #242d49;
 $lighter-text: #ffffff;
 
-$danger: #880808;
+$danger: #d30606;
+
+$shadow-md: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+  drop-shadow(0 2px 2px #0000000f);
 
 $buttonBg: linear-gradient(98.63deg, $accent 0%, $darker-accent 100%);
 $bg-color: #ffffff;
@@ -22,5 +25,9 @@ $video: #4a4eb7;
 $location: #ef5757;
 $shedule: #e1ae4a;
 $blur: #a6ddf0;
+
+$likes: #ef5757;
+$reply: #4cb256;
+$share: #4a4eb7;
 
 $ff: 'Montserrat', sans-serif;

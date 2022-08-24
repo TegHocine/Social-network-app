@@ -1,0 +1,24 @@
+@use '../../scss/' as *;
+.trend {
+  width: 100%;
+  background-color: $cardColor;
+  filter: $shadow-md;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  & > * {
+    padding-inline: 1rem;
+  }
+
+  .trendCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    margin-bottom: 0.6rem;
+    & > span:nth-child(1) {
+      font-weight: bold;
+    }
+    & > span:nth-child(2) {
+      @include fontSize(0.875rem);
+    }
+  }
+}

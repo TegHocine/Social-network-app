@@ -1,13 +1,14 @@
 import PostSide from '../../components/postSide/PostSide'
-import ProfileSide from '../../components/ProfileSide/ProfileSide'
+import LeftSidebar from '../../components/LeftSidebar/LeftSidebar'
+import RightSidebar from '../../components/rightSidebar/RightSidebar'
 import './Home.scss'
 
 const Home = () => {
   return (
     <div className='home'>
-      <ProfileSide />
+      <LeftSidebar />
       <PostSide />
-      <div className='right-side'>right</div>
+      <RightSidebar />
     </div>
   )
 }

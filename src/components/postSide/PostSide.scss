@@ -3,8 +3,6 @@
 .postSide {
   @include flex(center, unset);
   flex-direction: column;
-  height: 100vh;
-
   margin-inline: auto;
   gap: 1rem;
   flex: 1;
