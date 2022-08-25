@@ -36,7 +36,7 @@ const ShareComp = ({ modal = false }: ShareCompProps): JSX.Element => {
       {
         <Button
           title='Share'
-          className='share-modal-button'
+          className={'share-modal-button '}
           onclick={() => setIsOpen(true)}
         />
       }
@@ -79,7 +79,11 @@ const ShareComp = ({ modal = false }: ShareCompProps): JSX.Element => {
                 onclick={() => console.log('hi')}
               />
 
-              <Button title='Share' onclick={() => console.log('hi')} />
+              <Button
+                title='Share'
+                className='share-button'
+                onclick={() => console.log('hi')}
+              />
             </div>
             <div style={{ display: 'none' }}>
               <input

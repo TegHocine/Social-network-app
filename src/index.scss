@@ -3,24 +3,6 @@
 .app {
   overflow: hidden;
   color: $darker-text;
-  background-color: $lighter-text;
+  background-color: $bg-color;
   font-family: $ff;
-  font-display: swap;
-
-  .blur {
-    position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background-color: $blur;
-    filter: blur(72px);
-    &.blur-top {
-      top: -18%;
-      right: 0;
-    }
-    &.blur-mid {
-      top: 36%;
-      left: -8rem;
-    }
-  }
 }

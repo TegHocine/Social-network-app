@@ -2,7 +2,7 @@
 
 .postItem {
   margin-bottom: 2rem;
-  width: 90%;
+  width: calc(100% - 2rem);
   display: flex;
   margin-inline: auto;
   flex-direction: column;
