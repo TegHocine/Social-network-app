@@ -9,9 +9,13 @@ import {
 
 import './NavBar.scss'
 
-const NavBar = () => {
+type NavBarProps = {
+  className?: string
+}
+
+const NavBar = ({ className }: NavBarProps): JSX.Element => {
   return (
-    <div className='navBar'>
+    <div className={`navBar ${className}`}>
       <a href='' title='Home'>
         <RiTwitterFill className='navItem' />
       </a>

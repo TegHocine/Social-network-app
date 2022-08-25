@@ -5,4 +5,8 @@
   flex-direction: column;
   flex: 0.4;
   gap: 1rem;
+  display: none;
+  @include media(768px) {
+    display: flex;
+  }
 }

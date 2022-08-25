@@ -6,4 +6,16 @@
   margin-inline: auto;
   gap: 1rem;
   flex: 1;
+  position: relative;
+
+  .fixed-navbar {
+    position: fixed;
+    bottom: 0;
+    background-color: $bg-color;
+    width: 100%;
+    padding-block: 0.5rem;
+    @include media(768px) {
+      display: none;
+    }
+  }
 }

@@ -1,4 +1,5 @@
 import SearchBar from '../searchBar/SearchBar'
+import ShareComp from '../shareComp/ShareComp'
 import Trend from '../trend/Trend'
 import './RightSidebar.scss'
 
@@ -7,6 +8,7 @@ const RightSide = () => {
     <div className='rightSide'>
       <SearchBar />
       <Trend />
+      <ShareComp modal />
     </div>
   )
 }

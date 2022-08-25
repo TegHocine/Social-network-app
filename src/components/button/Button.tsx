@@ -5,21 +5,27 @@ type ButtonProps = {
   onclick: Function
   alter?: boolean
   icon?: JSX.Element
+  className?: string
 }
 
 const Button = ({
   title,
   onclick,
   alter = false,
-  icon
+  icon,
+  className
 }: ButtonProps): JSX.Element => {
   return alter ? (
-    <button className='button alter-button' onClick={() => onclick()}>
+    <button
+      className={`button alter-button ${className ? className : ''}`}
+      onClick={() => onclick()}>
       {icon && icon}
       <span>{title}</span>
     </button>
   ) : (
-    <button className='button default-button' onClick={() => onclick()}>
+    <button
+      className={`button default-button ${className ? className : ''}`}
+      onClick={() => onclick()}>
       {title}
     </button>
   )

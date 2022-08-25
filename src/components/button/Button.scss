@@ -3,23 +3,33 @@
 .button {
   all: unset;
   cursor: pointer;
+  @include flex(center, center);
 
   &.alter-button {
     @include flex(center, center);
-    @include fontSize(1.3rem);
+    @include fontSize(1rem);
     & > span {
       @include fontSize(0.75rem);
+    }
+    @include media(1280px) {
+      @include fontSize(1.3rem);
     }
   }
 
   &.default-button {
     color: $lighter-text;
-    padding-block: 0.5rem;
-    padding-inline: 1rem;
+    padding-block: 0.3rem;
+    padding-inline: 0.75rem;
     border-radius: 10px;
     background: $buttonBg;
     font-weight: 500;
-    @include fontSize(0.875rem);
+    @include fontSize(0.75rem);
+
+    @include media(768px) {
+      padding-block: 0.5rem;
+      padding-inline: 1rem;
+      @include fontSize(0.875rem);
+    }
 
     transition: all 100ms ease;
     &:hover {
