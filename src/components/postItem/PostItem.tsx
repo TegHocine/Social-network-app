@@ -22,7 +22,7 @@ const PostItem = ({ img, name, desc, likes, liked }: PostItemProps) => {
 
       <div className='postReact'>
         {liked ? (
-          <AiFillHeart title='Like' className='postReact__likes' />
+          <AiFillHeart title='Like' className='postReact__likes active' />
         ) : (
           <AiOutlineHeart title='Like' className='postReact__likes' />
         )}

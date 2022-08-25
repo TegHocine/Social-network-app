@@ -27,7 +27,8 @@
     .fixed-navbar {
       position: fixed;
       bottom: 0;
-      background-color: $bg-color;
+      background-color: $cardColor;
+      filter: $shadow-md;
       width: 100%;
       padding-block: 0.5rem;
       @include media(768px) {

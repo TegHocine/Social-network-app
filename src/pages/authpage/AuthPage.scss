@@ -1,0 +1,87 @@
+@use '../../scss/' as *;
+
+.authPage {
+  @include flex(center, center);
+  flex-direction: column;
+  position: relative;
+  padding-inline: 1rem;
+  overflow: hidden;
+  @include media(1024px) {
+    height: 100vh;
+    gap: 4rem;
+    flex-direction: row;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    .logo {
+      @include fontSize(4rem);
+      color: $accent;
+    }
+
+    .webname {
+      & > h1 {
+        @include fontSize(2.5rem);
+        background-image: $buttonBg;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      & > h6 {
+        margin-top: -2rem;
+        @include fontSize(0.875rem);
+      }
+    }
+  }
+  // logIn
+  &__right {
+    .authform {
+      width: fit-content;
+      padding: 1.5rem;
+      background-color: $bg-color;
+      filter: $shadow-md;
+      border-radius: 1rem;
+      @include flex(center, center);
+      flex-direction: column;
+
+      gap: 1rem;
+      .auth-input {
+        border: none;
+        outline: none;
+        background-color: $inputColor;
+        width: 100%;
+        border-radius: 0.5rem;
+        padding-block: 1rem;
+        text-indent: 1rem;
+        min-width: 10rem;
+      }
+      &__actions {
+        width: 100%;
+        @include flex(center, space-between);
+        gap: 0.5rem;
+        & > span {
+          @include fontSize(0.75rem);
+          cursor: pointer;
+          &:hover {
+            color: $accent;
+          }
+        }
+        & > button {
+          @include fontSize(0.75rem);
+          padding-inline: 0.7rem;
+        }
+      }
+
+      .input-wrapper {
+        @include flex(center, center);
+        gap: 1rem;
+        flex: 1;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  // Signup
+}

@@ -20,6 +20,7 @@ const Profile = () => {
       <div className='middleSide'>
         <ProfileCard />
         <ShareComp />
+        <Posts />
         <NavBar className='fixed-navbar' />
       </div>
 

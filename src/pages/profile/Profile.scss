@@ -5,6 +5,10 @@
   display: flex;
   gap: 1.5rem;
   padding: 1rem;
+  margin-bottom: 3rem;
+  @include media(768px) {
+    margin-bottom: 0;
+  }
 
   .leftSidebar {
     @include flex(center, unset);
@@ -24,11 +28,11 @@
     gap: 1rem;
     flex: 1;
     position: relative;
-
     .fixed-navbar {
       position: fixed;
       bottom: 0;
-      background-color: $bg-color;
+      background-color: $cardColor;
+      filter: $shadow-md;
       width: 100%;
       padding-block: 0.5rem;
       @include media(768px) {

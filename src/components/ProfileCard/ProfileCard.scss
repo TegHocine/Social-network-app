@@ -72,7 +72,16 @@
     }
   }
 
-  & > span {
+  .link {
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    & > span {
+      @include fontSize(0.875rem);
+    }
+    & > svg {
+      @include fontSize(1rem);
+    }
+    text-decoration: none;
     font-weight: bold;
     color: $accent;
     align-self: center;
