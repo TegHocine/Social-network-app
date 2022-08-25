@@ -1,6 +1,50 @@
+@use '../../scss/' as *;
+
 .profile {
   position: relative;
   display: flex;
   gap: 1.5rem;
   padding: 1rem;
+
+  .leftSidebar {
+    @include flex(center, unset);
+    flex-direction: column;
+    flex: 0.4;
+    gap: 1rem;
+    display: none;
+    @include media(768px) {
+      display: flex;
+    }
+  }
+
+  .middleSide {
+    @include flex(center, unset);
+    flex-direction: column;
+    margin-inline: auto;
+    gap: 1rem;
+    flex: 1;
+    position: relative;
+
+    .fixed-navbar {
+      position: fixed;
+      bottom: 0;
+      background-color: $bg-color;
+      width: 100%;
+      padding-block: 0.5rem;
+      @include media(768px) {
+        display: none;
+      }
+    }
+  }
+
+  .rightSidebar {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    gap: 1rem;
+    flex: 0.4;
+    display: none;
+    @include media(1024px) {
+      display: flex;
+    }
+  }
 }

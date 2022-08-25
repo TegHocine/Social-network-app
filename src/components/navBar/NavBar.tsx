@@ -21,18 +21,39 @@ const NavBar = ({ className }: NavBarProps): JSX.Element => {
       <NavLink
         to='/'
         title='Home'
-        className={({ isActive }) => (isActive ? 'active-nav' : '')}>
-        <RiTwitterFill className='navItem' />
+        className={({ isActive }) =>
+          isActive ? 'active-nav' : 'inactive-nav'
+        }>
+        <RiTwitterFill className='active-navItem navItem ' />
+        <RiTwitterLine className='inactive-navItem navItem ' />
       </NavLink>
-      <NavLink to='/profile' title='Profile'>
-        <FaRegUser className='navItem' />
+      <NavLink
+        to='/profile'
+        title='Profile'
+        className={({ isActive }) =>
+          isActive ? 'active-nav' : 'inactive-nav'
+        }>
+        <FaUser className='active-navItem navItem' />
+        <FaRegUser className='inactive-navItem navItem' />
       </NavLink>
-      <NavLink to='!#' title='Messages'>
-        <RiChat1Line className='navItem' />
+      <NavLink
+        to='!#'
+        title='Messages'
+        className={({ isActive }) =>
+          isActive ? 'active-nav' : 'inactive-nav'
+        }>
+        <RiChat1Fill className='active-navItem navItem' />
+        <RiChat1Line className='inactive-navItem navItem' />
       </NavLink>
 
-      <NavLink to='!#' title='Notifications'>
-        <IoMdNotificationsOutline className='navItem' />
+      <NavLink
+        to='!#'
+        title='Notifications'
+        className={({ isActive }) =>
+          isActive ? 'active-nav' : 'inactive-nav'
+        }>
+        <IoMdNotifications className='active-navItem navItem' />
+        <IoMdNotificationsOutline className='inactive-navItem navItem' />
       </NavLink>
     </div>
   )

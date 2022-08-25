@@ -2,6 +2,7 @@
 
 .button {
   all: unset;
+  width: fit-content;
   cursor: pointer;
   @include flex(center, center);
 

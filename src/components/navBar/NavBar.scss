@@ -3,6 +3,7 @@
 .navBar {
   width: 100%;
   @include flex(center, space-around);
+  transition: all 300ms ease;
 
   .navItem {
     @include fontSize(1.5rem);
@@ -17,8 +18,16 @@
       background-color: rgb($accent, 0.2);
     }
   }
+  .inactive-nav {
+    .active-navItem {
+      display: none;
+    }
+  }
 
   .active-nav {
+    .inactive-navItem {
+      display: none;
+    }
     .navItem {
       color: $accent;
     }

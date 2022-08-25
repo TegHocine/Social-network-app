@@ -1,0 +1,19 @@
+@use '../../scss/' as *;
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: $cardColor;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 90%;
+  filter: $shadow-md;
+
+  .infoHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+}

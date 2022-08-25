@@ -16,13 +16,13 @@ const Home = () => {
         <FollowersCard />
       </div>
 
-      <div className='postSide'>
+      <div className='middleSide'>
         <ShareComp />
         <Posts />
         <NavBar className='fixed-navbar' />
       </div>
 
-      <div className='rightSide'>
+      <div className='rightSidebar'>
         <SearchBar />
         <Trend />
         <ShareComp modal />

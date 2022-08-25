@@ -16,7 +16,7 @@
     }
   }
 
-  .postSide {
+  .middleSide {
     @include flex(center, unset);
     flex-direction: column;
     margin-inline: auto;
@@ -36,7 +36,7 @@
     }
   }
 
-  .rightSide {
+  .rightSidebar {
     @include flex(flex-start, flex-start);
     flex-direction: column;
     gap: 1rem;
