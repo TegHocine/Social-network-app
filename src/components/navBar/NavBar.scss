@@ -17,4 +17,10 @@
       background-color: rgb($accent, 0.2);
     }
   }
+
+  .active-nav {
+    .navItem {
+      color: $accent;
+    }
+  }
 }

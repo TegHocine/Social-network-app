@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 import { FaUser, FaRegUser } from 'react-icons/fa'
 import { IoMdNotificationsOutline, IoMdNotifications } from 'react-icons/io'
 import {
@@ -16,19 +18,22 @@ type NavBarProps = {
 const NavBar = ({ className }: NavBarProps): JSX.Element => {
   return (
     <div className={`navBar ${className}`}>
-      <a href='' title='Home'>
+      <NavLink
+        to='/'
+        title='Home'
+        className={({ isActive }) => (isActive ? 'active-nav' : '')}>
         <RiTwitterFill className='navItem' />
-      </a>
-      <a href='' title='Profile'>
+      </NavLink>
+      <NavLink to='/profile' title='Profile'>
         <FaRegUser className='navItem' />
-      </a>
-      <a href='' title='Messages'>
+      </NavLink>
+      <NavLink to='!#' title='Messages'>
         <RiChat1Line className='navItem' />
-      </a>
+      </NavLink>
 
-      <a href='' title='Notifications'>
+      <NavLink to='!#' title='Notifications'>
         <IoMdNotificationsOutline className='navItem' />
-      </a>
+      </NavLink>
     </div>
   )
 }

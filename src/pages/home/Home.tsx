@@ -1,14 +1,32 @@
-import PostSide from '../../components/postSide/PostSide'
-import LeftSidebar from '../../components/LeftSidebar/LeftSidebar'
-import RightSidebar from '../../components/rightSidebar/RightSidebar'
+import ShareComp from '../../components/shareComp/ShareComp'
+import Posts from '../../components/posts/Posts'
+import NavBar from '../../components/navBar/NavBar'
+import ProfileCard from '../../components/ProfileCard/ProfileCard'
+import FollowersCard from '../../components/followersCard/FollowersCard'
+import SearchBar from '../../components/searchBar/SearchBar'
+import Trend from '../../components/trend/Trend'
 import './Home.scss'
 
 const Home = () => {
   return (
     <div className='home'>
-      <LeftSidebar />
-      <PostSide />
-      <RightSidebar />
+      <div className='leftSidebar'>
+        <NavBar />
+        <ProfileCard />
+        <FollowersCard />
+      </div>
+
+      <div className='postSide'>
+        <ShareComp />
+        <Posts />
+        <NavBar className='fixed-navbar' />
+      </div>
+
+      <div className='rightSide'>
+        <SearchBar />
+        <Trend />
+        <ShareComp modal />
+      </div>
     </div>
   )
 }
